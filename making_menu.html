@@ -15,12 +15,19 @@
         body{
             background-color: #1E2434;
         }
+        .menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
         .menu ul{
             display: flex;
             justify-content: center;
             align-items: center;
             list-style: none;
-            margin-top: 20px;
+            padding-top: 20px;
+            margin: 0 auto;
         }
         .menu ul li{
             margin: 0 50px;
@@ -52,6 +59,66 @@
         .menu_hover:hover::after {
             width: 100%;
         }
+
+        .content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .content-img img{
+            width: auto;
+            height: 600px;
+        }
+        .content-text{
+            color: #fff;
+        }
+        .content-text p{
+            font-size: 20px;
+        }
+        .content-text h1{
+            font-size: 96px;
+        }
+        .content-text h1 span{
+            color: #4D89C1;
+        }
+        .content-text h1 .dot{
+            font-size: 60px;
+            color: #fff;
+            margin-left: 5px;
+        }
+        .content-text h3{
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .content-text h3 span{
+            color: #4D89C1;
+            font-weight: 800;
+        }
+        .btn{
+            height: 40px;
+            width: 150px;
+            border-radius: 4px;
+            border: solid transparent 2px;
+            background-color: #4D89C1;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 35px;
+            cursor: pointer;
+            transition: .5s ease;
+        }
+        .btn:hover{
+            border: solid #fff 2px;
+        }
+        .btn .arrow{
+            margin-left: 8px;
+            display: inline-block;
+            transition: transform .3s ease;
+        }
+        .btn:hover .arrow{
+            transform: translateX(5px);
+        }
     </style>
 </head>
 <body>
@@ -66,5 +133,19 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="content">
+            <div class="content-text">
+                <p>Hi, my name is Vinicius.</p>
+                <h1>PROJECTING MY <br><span>FUTURE</span><span class="dot">.</span></h1>
+                <p>I am a Design and Programming student with a focus on UI & UX Design,<p>seeking to pursue a career in the field.</p></p>
+                <h3>Aspiring <span>UI & UX Designer</span> <br>and <span>Front-end</span> Developer.</h3>
+                <button class="btn">Talk to me <span class="arrow">→</span></button>
+            </div>
+            <div class="content-img">
+                <img src="./assets/img/Group 131.png" alt="">
+            </div>
+        </div>
+    </main>
 </body>
 </html>

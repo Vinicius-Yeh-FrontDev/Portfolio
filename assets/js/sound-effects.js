@@ -3,7 +3,7 @@ let canPlaySound = true;
 window.addEventListener('scroll', function() {
     if (canPlaySound) {
         const audio = document.getElementById('scroll-sound');
-        audio.currentTime = 0;
+        audio.currentTime = 0; // Efeito sonoro do scroll
         audio.play();
         
         canPlaySound = false;

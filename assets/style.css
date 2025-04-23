@@ -8,28 +8,28 @@
 body {
     margin: 0;
     padding: 0;
-    height: 120vh; /* Garantir que o body ocupe 100% da altura da tela */
-    background-color: #28293E;
-    overflow: hidden; /* Evita barras de rolagem quando a div rotaciona */
+    height: 120vh;
+    background-color: #1E2434;
+    overflow: hidden; /* Esconde a barra de rolagem */
 }
 .none{
     display: none;
 }
 .overflow{
-    overflow: visible;
+    overflow: visible; /* Revela a barra de rolagem, isso acontece após a introdução */
 }
 .overflow::-webkit-scrollbar {
     width: 8px;  /* Largura da barra de rolagem */
 }
 .overflow::-webkit-scrollbar-thumb {
     background-color: #4D89C1; /* Cor do thumb */
-    border-radius: 10px;        /* Bordas arredondadas */
+    border-radius: 10px;
 }
 .overflow::-webkit-scrollbar-track {
-    background-color: #28293E; /* Cor do fundo da barra */
+    background-color: #1E2434; /* Cor do fundo da barra */
 }
 .square1{
-    width: 4000px;  /* 50% da largura da janela */
+    width: 4000px;
     height: 1000px;
     background-color: #4D89C1;
     transform: rotate(-45deg);
@@ -61,15 +61,4 @@ body {
 .square2-animation{
     right: -95%;
     box-shadow: 0 -20px 8px rgba(0, 0, 0, 0.1);
-}
-#button-test{
-    width: 300px;
-    height: 300px;
-    background-color: #4D89C1;
-    border-radius: 8px;
-    margin: 50px;
-    transition: .3s ease-in-out;
-}
-#button-test:hover{
-    transform: scale(1.1);
 }
