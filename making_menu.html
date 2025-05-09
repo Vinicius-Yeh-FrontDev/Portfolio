@@ -64,7 +64,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 100vh;
+            height: 85vh;
         }
         .content-img img{
             width: auto;
@@ -119,6 +119,33 @@
         .btn:hover .arrow{
             transform: translateX(5px);
         }
+        .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        background-color: #262F46;
+        padding: 33px 0;
+        }
+
+        .carousel-track {
+        display: flex;
+        width: fit-content;
+        animation: scroll 30s linear infinite;
+        }
+
+        .carousel-track img {
+        height: 70px;
+        margin: 0 100px;
+        object-fit: contain;
+        }
+
+        @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+        }
     </style>
 </head>
 <body>
@@ -144,6 +171,25 @@
             </div>
             <div class="content-img">
                 <img src="./assets/img/Group 131.png" alt="">
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="./assets/img/carrossel/devicon_css3-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/devicon_html5-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/devicon_java-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/logos_git.png" alt="">
+                <img src="./assets/img/carrossel/logos_javascript.png" alt="">
+                <img src="./assets/img/carrossel/logos_mysql.png" alt="">
+                <img src="./assets/img/carrossel/mdi_github.png" alt="">
+                <!--Duplicado para efeito de carrossel infinito-->
+                <img src="./assets/img/carrossel/devicon_css3-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/devicon_html5-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/devicon_java-wordmark.png" alt="">
+                <img src="./assets/img/carrossel/logos_git.png" alt="">
+                <img src="./assets/img/carrossel/logos_javascript.png" alt="">
+                <img src="./assets/img/carrossel/logos_mysql.png" alt="">
+                <img src="./assets/img/carrossel/mdi_github.png" alt="">
             </div>
         </div>
     </main>
